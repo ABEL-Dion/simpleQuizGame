@@ -46,6 +46,10 @@ while is_on:
         is_on = False
         screen.bye()
         break
+    if answer == "Exit" or answer == "exit":
+        is_on = False
+        screen.bye()
+        break
     if answer.title() in correct_guess:
         print("you have guessed it already ")
         continue
